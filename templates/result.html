@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+<h1>Congratulations!</h1>
+<p>Your Score: {{ grade }} / {{ possible }}</p>
+
+<h3>Exam Results:</h3>
+
+<ul>
+{% for id in selected_ids %}
+    <li>Selected Choice ID: {{ id }}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
